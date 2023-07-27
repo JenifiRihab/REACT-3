@@ -3,8 +3,6 @@ import { useEffect, useState } from "react";
     const RandomCocktail = () => {
         const [randomCocktail, setRandomCocktail] = useState(null);
 
-// => le premier responseJson fait un appel à la responseApi.
-
         const fetchRandomCocktail = async () => {
             const randomCocktailsResponse = await fetch( `https://www.thecocktaildb.com/api/json/v1/1/random.php` );
             const allRandomCocktailJs = await randomCocktailsResponse.json();
