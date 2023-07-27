@@ -1,22 +1,31 @@
 import { useEffect, useState } from "react";
 
-const ListCategories = () => {
-    const [categories, setCategories] = useState([]);
+    const ListCategories = () => {
+        const [categories, setCategories] = useState([]);
 
-    const fetchCategories = async () => {
-        const categoriesResponse = await fetch("https://www.themealdb.com/api/json/v1/1/categories.php");
-        const categoriesJs = await categoriesResponse.json();
+            const fetchListCategories = async () => {
+                const categoriesResponse = await fetch("https://www.themealdb.com/api/json/v1/1/categories.php");
+                const categoriesJs = await categoriesResponse.json();
 
-        setCategories(categoriesJs.categories);
-    };
+                setCategories(categoriesJs.categories);
+            };
 
-    useEffect(() => {
-        fetchCategories();
-    }, []);
+
+    // Utilisation du useEffect :
+    // => pour permetera de charger qu'un nombre de fois limité du composant 
+    // => pour effectuer une requête au chargement du composant 
+    // => mettra à jour l'état "categories".
+    // => useEffect donnera les nouvelles données.
+
+        useEffect(() => {
+
+            fetchListCategories();
+            
+        }, []);
 
     return (
         <div>
-            <h2>Categories</h2>
+            <h3>Categories</h3>
 
             {categories.map((category) => {
 
@@ -26,7 +35,7 @@ const ListCategories = () => {
                         <h3>{category.strCategory}</h3>
                         <img src={category.strCategoryThumb} alt={category.strCategory} />
                         <p>{category.strCategoryDescription}</p>
-                        
+
                     </div>
                 );
 
