@@ -23,8 +23,8 @@ const MealsList = () => {
         }, []);
 
     return (
-        <div>
-            <h1>Meals List</h1>
+        <div className=" meals">
+            <h1>MEALS LIST</h1>
 
             {detailMeal && (
                 <div>

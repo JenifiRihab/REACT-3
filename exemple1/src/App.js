@@ -1,9 +1,10 @@
 import "./App.css";
   import Header from "./Header";
-  import MealsList from "./MealsList";
-  import RandomMeal from "./RandomMeal";
-  import SearchMeals from "./SearchMeals";
+  // import MealsList from "./MealsList";
+  // import RandomMeal from "./RandomMeal";
+  // import SearchMeals from "./SearchMeals";
   import ListCategories from "./ListCategories";
+  import MealsByCategory from "./MealsByCategory ";
   import Footer from "./Footer";
 
   function App() {
@@ -11,10 +12,11 @@ import "./App.css";
         <>
 
           <Header />
-          <MealsList />
+          {/* <MealsList />
           <RandomMeal />
-          <SearchMeals />
+          <SearchMeals /> */}
           <ListCategories />
+          {/* <MealsByCategory /> */}
           <Footer />
 
         </>
