@@ -1,6 +1,11 @@
 import { useEffect, useState } from "react";
 
+// => un cocktail random, peux simplement faire appel a lui et a l'afficher comme vu pour la liste des cocktails//
+
     const RandomCocktail = () => {
+
+// => le useState(null) peut aider pour un Loading
+
         const [randomCocktail, setRandomCocktail] = useState(null);
 
         const fetchRandomCocktail = async () => {
@@ -24,6 +29,7 @@ import { useEffect, useState } from "react";
 
         return (
      // => On rentre des differents liens qui vient de l'api
+     // => affiche un cocktail aléatoire au chargement du composant 
             <div>
             <h1> <strong> RANDOM COCKTAIL 🍸: </strong></h1>
 
@@ -34,7 +40,7 @@ import { useEffect, useState } from "react";
                 </div>
             )}
 
-{/* Le bouton à pour instruction via onClick de changer de cocktail aléatoirement à chaque fois qu'on clique.  */}
+{/* Le bouton à pour instruction via onClick de changer de cocktail aléatoire affiché à chaque fois qu'on clique.  */}
 
 <br /><br />
             <button className = "btn" onClick = { fetchRandomCocktail }> Changer le cocktail</button>
