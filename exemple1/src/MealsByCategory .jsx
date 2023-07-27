@@ -1,26 +1,23 @@
-// const MealsByCategories = ({ mealsByCategory }) => {
-//     return (
-//       <>
-    
-
-//         <h3> <strong> Toutes les recettes:</strong></h3>   
-//         {mealsByCategory.map((meal) => {
-
-//         return (
-    
-//         <div key={meal.idMeal}>
-
-//             <h3>{meal.strMeal}</h3>
-
-//         </div>
-//     );
-
-// })}
-//       </>
-
-
-//     );
-//   };
+const MealsByCategory = ({ isLoading, mealsByCategory }) => {
+    return (
+      <div>
+        <h2>Liste des recettes liées à la catégorie : </h2>
   
-
-// export default MealsByCategories;
+        {isLoading ? (
+          <p>Chargement...</p>
+        ) : (
+          <div>
+            {mealsByCategory.map((meal) => {
+              return (
+                <div key={meal.idMeal}>
+                  <h3>{meal.strMeal}</h3>
+                </div>
+              );
+            })}
+          </div>
+        )}
+      </div>
+    );
+  };
+  
+  export default MealsByCategory;

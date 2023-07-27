@@ -10,6 +10,13 @@ import { useEffect, useState } from "react";
             setListCocktails(allCocktailsJs.drinks);
         };
 
+
+    // Utilisation du useEffect :
+    // => pour permetera de charger qu'un nombre de fois limité du composant 
+    // => pour effectuer une requête au chargement du composant 
+    // => mettra à jour l'état "categories".
+    // => useEffect donnera les nouvelles données.
+
         useEffect(() => {
             fetchListCocktails();
         }, []);
