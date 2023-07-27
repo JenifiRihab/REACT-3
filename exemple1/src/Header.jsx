@@ -6,7 +6,7 @@ const Header = () => {
         
             <div>
                 <nav className="menu" >  
-                    <img className="logo" src="https://th.bing.com/th/id/R.041b055e088c5b1d4d93ea3232598d00?rik=QYk7eFMulQwP6w&pid=ImgRaw&r=0" alt="" />
+                    <img className="logo" src="https://www.diabetevaud.ch/wp-content/uploads/2018/03/recette-logo-1024x1024.png" alt="" />
 
                     <ul className="navbar-collapse" >
                             <li><a href="#blank">SERVICES</a></li>
@@ -18,12 +18,12 @@ const Header = () => {
     
             <div> 
                 <span>
-                    <h1 className="title"> Intelligence Digitale. </h1>
+                    <h1 className="title"> Welcome to TheMealDB 🍉🍒 . </h1>
                 </span>
             </div>
     
             <div>
-                <span class="btn">DÉMARRER MON PROJET  😉</span>
+                <span class="btn">SEARCH  🍔😉</span>
             </div>
         
         </section>

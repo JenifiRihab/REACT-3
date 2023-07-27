@@ -37,7 +37,7 @@ const MealsList = () => {
                 {meals.map((meal) => (
                 <div key={meal.idMeal}>
                     <h2>{meal.strMeal}</h2>
-                    <button onClick={() => handleDetailsClick(meal.idMeal)}>Afficher le détail</button>
+                    <button className="btn1" onClick={() => handleDetailsClick(meal.idMeal)}>Afficher le détail</button>
                 </div>
                 ))}
             </div>
