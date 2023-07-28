@@ -58,14 +58,14 @@ body{
   white-space: normal;
   font-weight: 700;
   text-align: -webkit-match-parent;
-  background-color: rgb(8, 114, 81);
-  color:white;
+  background-color: rgb(255, 255, 255);
+  color:rgb(35, 154, 88);
   border-radius: 10px;
   display: inline-block;
   margin-bottom: 10px;
   text-decoration: none;
   transition:all 0.2s ease-in;
-  border: 2px solid rgb(129, 2, 46);
+  border: 2px solid rgb(235, 255, 56);
   font-size: large;
 
 }
@@ -112,3 +112,9 @@ h2:hover {
   text-align: center;
   background-color: rgba(3, 44, 37, 0.621);
 }
+.category{
+  color:rgb(241, 255, 45);
+  font-size: xx-large;
+  font-weight: 900;
+}
+

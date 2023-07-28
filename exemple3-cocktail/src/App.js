@@ -7,6 +7,7 @@ import RandomCocktailPage from "./page/RandomCocktailPage";
 import "./App.css";
 import SearchResultsPage from "./page/SearchResultsPage";
 import ShowCocktailPage from "./page/ShowCocktailPage";
+import ListCocktailsByCategory from "./page/ListCocktailsByCategory";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/cocktails/show/:id" element={<ShowCocktailPage />} />
         <Route path="/cocktails/random" element={<RandomCocktailPage />} />
         <Route path="/search-results" element={<SearchResultsPage />} />
+        <Route path="/cocktails/by-category/:categoryName" element={<ListCocktailsByCategory/>} />
       </Routes>
     </BrowserRouter>
   );
