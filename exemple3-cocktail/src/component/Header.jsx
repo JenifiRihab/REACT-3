@@ -15,7 +15,7 @@ const Header = () => {
         <section className="header">
 
           <nav className="menu" >  
-              <img className="logo" src="https://www.diabetevaud.ch/wp-content/uploads/2018/03/recette-logo-1024x1024.png" alt="" />
+              <img className="logo" src="https://cdn-icons-png.flaticon.com/512/7868/7868918.png" alt="" />
             <ul>
               <li>
                 <Link to="/">Accueil</Link>
@@ -33,7 +33,7 @@ const Header = () => {
                   <Link to="/cocktails/random"> Rechercher un cocktail</Link>
                       <br />
                   <input type="text" name="search" placeholder="Rechercher" />
-                  <button  className="btn" type="submit"> SEARCH 😉</button>
+                  <button  className="btn" type="submit"> SEARCH 🍷</button>
                 </form>
 
               </li>
@@ -43,7 +43,7 @@ const Header = () => {
 
           <div> 
               <span>
-                  <h1 className="title"> <strong> les cocktails 🍹🍒 . </strong></h1>
+                  <h2 className="title"> <strong> les cocktails 🍹 . </strong></h2>
               </span>
           </div>
 
