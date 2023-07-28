@@ -6,6 +6,41 @@ body{
 
   }   
 
+
+
+
+  
+  li,span {
+    list-style: none;
+    padding: 0 25px;
+  }
+  
+  a{
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:visited {
+    color: rgb(255, 255, 255);
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5%;
+  }
+  
+  ul {
+    display: flex;
+  }
+  
+  main a {
+      padding: 10px 40px;
+      border-radius: 4px;
+  }
+  
+
 .btn {
   padding: 13px 30px;
   cursor: pointer;

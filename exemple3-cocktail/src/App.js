@@ -4,6 +4,8 @@ import HomePage from "./page/HomePage";
 import ListCocktailsPage from "./page/ListCocktailsPage";
 import RandomCocktailPage from "./page/RandomCocktailPage";
 
+import './App.css';
+
 function App() {
   return (
     <BrowserRouter>

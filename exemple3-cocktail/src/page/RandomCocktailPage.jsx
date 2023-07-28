@@ -19,7 +19,7 @@ const RandomCocktailPage = () => {
     <>
       <Header />
       <div>
-        <h1>Random Cocktail</h1>
+      <h1> <strong> RANDOM COCKTAIL 🍹🍸: </strong></h1>
 
         {randomCocktail === null && <p>Loading...</p>}
 
@@ -29,7 +29,12 @@ const RandomCocktailPage = () => {
             <img src={randomCocktail.strDrinkThumb} alt={randomCocktail.strDrink} />
           </div>
         )}
-        <button onClick={fetchRandomCocktail}>Changer le cocktail</button>
+       
+       
+       <br /><br />
+            <button className = "btn" onClick = { fetchRandomCocktail }> Changer le cocktail</button>
+<br /><br />
+
       </div>
     </>
   );

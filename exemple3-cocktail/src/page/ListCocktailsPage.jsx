@@ -20,7 +20,7 @@ const ListCocktailsPage = () => {
       <Header />
 
       <div>
-        <h1>List of Cocktails</h1>
+      <h1><strong> LIST COCKTAILS 🍹: </strong></h1>
 
         {cocktails.length === 0 && <p>Loading...</p>}
 
