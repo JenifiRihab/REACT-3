@@ -31,7 +31,8 @@ import { useEffect, useState } from "react";
      // => On rentre des differents liens qui vient de l'api
      // => affiche un cocktail aléatoire au chargement du composant 
             <div>
-            <h1> <strong> RANDOM COCKTAIL 🍸: </strong></h1>
+
+            <h1> <strong> RANDOM COCKTAIL 🍹🍸: </strong></h1>
 
             {randomCocktail && (
                 <div>

@@ -1,13 +1,12 @@
 import "./App.css";
-
+import RandomCocktails from "./RandomCocktails";
   import ListCocktails from "./ListCocktails";
-  import RandomCocktails from "./RandomCocktails";
  
   function App() {
       return (
         <>
-        <ListCocktails />
         <RandomCocktails />
+        <ListCocktails />
         </>
       );
   }
