@@ -29,12 +29,13 @@ import { useSearchParams } from "react-router-dom";
                 <h2> <strong> LES RESULTATS 🍹:</strong> </h2>
 
                 <div>
-                    {cocktails.length === 0 && <p>Loading...</p>}
-                    {cocktails.map((cocktail) => (
+                    { cocktails.length === 0 && <p>Loading...</p>}
+                    { cocktails.map((cocktail) => (
 
                     <div key = {cocktail.idDrink}>
                     <p>{cocktail.strDrink}</p>
                     </div>
+
 
                     ))}
                 </div>

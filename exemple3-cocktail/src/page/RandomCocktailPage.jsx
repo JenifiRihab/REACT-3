@@ -11,7 +11,7 @@ const RandomCocktailPage = () => {
     setRandomCocktail(randomCocktailJs.drinks[0]);
   };
 
-  useEffect(() => {
+  useEffect(() => {  
     fetchRandomCocktail();
   }, []);
 
@@ -19,9 +19,9 @@ const RandomCocktailPage = () => {
     <>
       <Header />
       <div>
-      <h2> <strong> RANDOM COCKTAIL 🍹🍸: </strong></h2>
+      <h2> <strong> RANDOM COCKTAIL🍹🍸: </strong></h2>
 
-        {randomCocktail === null && <p>Loading...</p>}
+        {randomCocktail === null && <p> Loading...</p>}
 
         {randomCocktail !== null && (
           <div>

@@ -24,16 +24,16 @@ const Header = () => {
                 <Link to="/cocktails">Liste des cocktails</Link>
               </li>
               <li>
-                <Link to="/cocktails/random">Cocktail aléatoire</Link>
+                <Link to="/cocktails/random"> Cocktail aléatoire</Link>
               </li>
 
               <li>
 
                 <form onSubmit={handleSubmit}>
-                  <Link to="/cocktails/random">Rechercher un cocktail</Link>
+                  <Link to="/cocktails/random"> Rechercher un cocktail</Link>
                       <br />
                   <input type="text" name="search" placeholder="Rechercher" />
-                  <button  className="btn" type="submit">SEARCH 😉</button>
+                  <button  className="btn" type="submit"> SEARCH 😉</button>
                 </form>
 
               </li>

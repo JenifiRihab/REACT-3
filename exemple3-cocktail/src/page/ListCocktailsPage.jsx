@@ -6,7 +6,7 @@ const ListCocktailsPage = () => {
 
   const fetchCocktails = async () => {
     
-    const allCocktailsResponse = await fetch("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=");
+    const allCocktailsResponse = await fetch( " https://www.thecocktaildb.com/api/json/v1/1/search.php?s=");
     const allCocktailsJs = await allCocktailsResponse.json();
 
     setCocktails(allCocktailsJs.drinks);
