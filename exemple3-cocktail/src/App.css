@@ -20,6 +20,7 @@ body{
   li,span {
     list-style: none;
     padding: 0 25px;
+    
   }
   
   a{
@@ -36,10 +37,13 @@ body{
     justify-content: space-between;
     align-items: center;
     margin: 0 5%;
+    font-size: large;
+ 
   }
-  
+
   ul {
     display: flex;
+  
   }
   
   main a {

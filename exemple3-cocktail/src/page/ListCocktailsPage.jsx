@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Header from "../component/Header";
+import { Link } from "react-router-dom";
 
 const ListCocktailsPage = () => {
   const [allCocktails, setCocktails] = useState([]);
@@ -21,7 +22,8 @@ const ListCocktailsPage = () => {
       <Header />
 
       <div>
-        <h2><strong> LIST COCKTAILS 🍹: </strong></h2>
+        <h2><strong> LIST OF COCKTAILS 🍹: </strong></h2>
+        
         <div className="list" >
 
             {allCocktails.length === 0 && <p>Loading...</p>}
@@ -29,6 +31,10 @@ const ListCocktailsPage = () => {
 
               <div key = {cocktail.idDrink}>
                 <p>{cocktail.strDrink}</p>
+                <img src={cocktail.strDrinkThumb} alt={cocktail.strDrink} />
+                <Link to={"/cocktails/show/" + cocktail.idDrink}>
+                  <br />Voir le cocktail</Link>
+
               </div>
               
             ))}
