@@ -2,13 +2,14 @@ import { useEffect, useState } from "react";
 import Header from "../component/Header";
 
 const ListCocktailsPage = () => {
-  const [cocktails, setCocktails] = useState([]);
+  const [allCocktails, setCocktails] = useState([]);
 
   const fetchCocktails = async () => {
-    const cocktailsResponse = await fetch("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=");
-    const cocktailsJs = await cocktailsResponse.json();
+    
+    const allCocktailsResponse = await fetch("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=");
+    const allCocktailsJs = await allCocktailsResponse.json();
 
-    setCocktails(cocktailsJs.drinks);
+    setCocktails(allCocktailsJs.drinks);
   };
 
   useEffect(() => {
@@ -20,15 +21,18 @@ const ListCocktailsPage = () => {
       <Header />
 
       <div>
-      <h1><strong> LIST COCKTAILS 🍹: </strong></h1>
+        <h2><strong> LIST COCKTAILS 🍹: </strong></h2>
+        <div className="list" >
 
-        {cocktails.length === 0 && <p>Loading...</p>}
+            {allCocktails.length === 0 && <p>Loading...</p>}
+            {allCocktails.map((cocktail) => (
 
-        {cocktails.map((cocktail) => (
-          <div key={cocktail.idDrink}>
-            <p>{cocktail.strDrink}</p>
-          </div>
-        ))}
+              <div key = {cocktail.idDrink}>
+                <p>{cocktail.strDrink}</p>
+              </div>
+              
+            ))}
+        </div>
       </div>
     </>
   );

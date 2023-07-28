@@ -19,7 +19,7 @@ const RandomCocktailPage = () => {
     <>
       <Header />
       <div>
-      <h1> <strong> RANDOM COCKTAIL 🍹🍸: </strong></h1>
+      <h2> <strong> RANDOM COCKTAIL 🍹🍸: </strong></h2>
 
         {randomCocktail === null && <p>Loading...</p>}
 
