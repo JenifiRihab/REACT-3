@@ -31,7 +31,7 @@ const Header = () => {
 
                 <form onSubmit={handleSubmit}>
                   <Link to="/cocktails/random">Rechercher un cocktail</Link>
-                  <br />
+                      <br />
                   <input type="text" name="search" placeholder="Rechercher" />
                   <button  className="btn" type="submit">SEARCH 😉</button>
                 </form>
@@ -43,7 +43,7 @@ const Header = () => {
 
           <div> 
               <span>
-                  <h1 className="title"> Welcome to TheMealDB 🍉🍒 . </h1>
+                  <h1 className="title"> <strong> les cocktails 🍹🍒 . </strong></h1>
               </span>
           </div>
 
