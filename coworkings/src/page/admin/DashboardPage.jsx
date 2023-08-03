@@ -16,7 +16,7 @@ const DashboardPage = () => {
     <>
       <HeaderAdmin />
 
-      <h2>Bonjour, Vous êtes sur le dashboard</h2>
+      <h1> <strong>Bonjour, Vous êtes sur le dashboard </strong></h1>
     </>
   );
 };

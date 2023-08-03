@@ -6,6 +6,7 @@ import CreateCoworkingPage from "./page/admin/CreateCoworkingPage";
 import UpdateCoworkingPage from "./page/admin/UpdateCoworkingPage";
 import LoginPage from "./page/public/LoginPage";
 import DashboardPage from "./page/admin/DashboardPage";
+import CoworkingsPublicPage from "./page/public/CoworkingsPublicPage";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
 
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<LoginPage />} />
+        <Route path="/admin/coworkings/display" element={<CoworkingsPublicPage />} />
       </Routes>
     </BrowserRouter>
   );
